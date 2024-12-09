@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/app/components/navbar2";
 import GreenHeader from "@/app/components/header-green";
-
 import arrow from "@/app/images/Vector (13).png";
 import cat1 from "@/app/images/card-item.png";
 import cat2 from "@/app/images/card-item (1).png";
@@ -26,8 +25,8 @@ import pic20 from "@/app/images/product-cover-5 (19).png";
 import fb from "@/app/images/facebook.png";
 import instagram from "@/app/images/ant-design_instagram-outlined.png";
 import twitter from "@/app/images/ant-design_twitter-outlined.png"
-
 import CardText from "@/app/components/card";
+
 export default function () {
   return (
     <div>
@@ -243,5 +242,5 @@ export default function () {
         </div>
       </div>
     </div>
-  );
-}
+          );
+        }
