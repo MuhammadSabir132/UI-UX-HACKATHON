@@ -27,11 +27,21 @@ import instagram from "@/app/images/ant-design_instagram-outlined.png";
 import twitter from "@/app/images/ant-design_twitter-outlined.png"
 import CardText from "@/app/components/card";
 
+module.exports = {
+  rules: {
+    'import/no-anonymous-default-export': 'off', // Disable the anonymous default export rule
+    'react/display-name': 'off' // Disable the display name rule
+  }
+};
+
+
 const ShopPage = () => {
   return (
     <div>
+
       <GreenHeader />
       <Navbar/>
+      
       {/* Shop Section */}
       <div className="absolute top-[100px] left-1/2 transform -translate-x-1/2 w-full h-[92px] py-[24px] flex flex-col items-center">
         <div className="w-[1049px] h-[44px] flex gap-[1000px] items-center py-[40px]">
@@ -245,4 +255,9 @@ const ShopPage = () => {
           );
         }
 
-export default ShopPage;
+
+
+        ShopPage.displayName = 'ShopPage';
+
+
+        export default ShopPage;
