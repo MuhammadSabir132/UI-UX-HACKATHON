@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Navbar from "@/app/components/navbar2";
 import GreenHeader from "@/app/components/header-green";
@@ -27,15 +28,10 @@ import instagram from "@/app/images/ant-design_instagram-outlined.png";
 import twitter from "@/app/images/ant-design_twitter-outlined.png"
 import CardText from "@/app/components/card";
 
-module.exports = {
-  rules: {
-    'import/no-anonymous-default-export': 'off', // Disable the anonymous default export rule
-    'react/display-name': 'off' // Disable the display name rule
-  }
-};
 
 
-const ShopPage = () => {
+
+export default function () {
   return (
     <div>
 
@@ -257,7 +253,4 @@ const ShopPage = () => {
 
 
 
-        ShopPage.displayName = 'ShopPage';
-
-
-        export default ShopPage;
+        
