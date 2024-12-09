@@ -27,7 +27,7 @@ import instagram from "@/app/images/ant-design_instagram-outlined.png";
 import twitter from "@/app/images/ant-design_twitter-outlined.png"
 import CardText from "@/app/components/card";
 
-export default function () {
+const ShopPage = () => {
   return (
     <div>
       <GreenHeader />
@@ -244,3 +244,5 @@ export default function () {
     </div>
           );
         }
+
+export default ShopPage;
